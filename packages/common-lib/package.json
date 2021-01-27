@@ -4,11 +4,11 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "author": "gmahechas",
+  "license": "ISC",
   "scripts": {
     "build": "tsc"
   },
-  "author": "gmahechas",
-  "license": "ISC",
   "dependencies": {
     "joi": "^17.3.0"
   },
