@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
 
+import { validate, personValidation, IPerson } from '@gmahechas/common-lib';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,17 +9,26 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class AppComponent {
 
+  person: IPerson = {
+    firstName: 'Jaya',
+    lastName: 'Company'
+  };
+
+  personForm = this.formBuilder.group({
+    firstName: this.formBuilder.control(''),
+    lastName: this.formBuilder.control('')
+  });
+
   constructor(
     private formBuilder: FormBuilder
   ) { }
 
-  personForm = this.formBuilder.group({
-    firstName: this.formBuilder.control(''),
-    lastName: this.formBuilder.control(''),
-    age: this.formBuilder.control('')
-  });
-
   onSubmit() {
-    console.log(this.personForm);
+    const { error } = validate(personValidation, this.personForm.value);
+    if (error) {
+      console.log('Error::', error.details);
+    } else {
+      console.log('OK:::', this.personForm.value)
+    }
   }
 }

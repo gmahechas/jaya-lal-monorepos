@@ -8,9 +8,6 @@
     Last Name
     <input type="text" formControlName="lastName" />
   </label>
-  <label>
-    Age
-    <input type="number" formControlName="age" />
-  </label>
+  <button>Enviar</button>
 </form>
-{{ personForm | json }}
+{{ personForm.value | json }}
