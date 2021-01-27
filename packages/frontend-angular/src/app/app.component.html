@@ -1,0 +1,16 @@
+<h1>Form Person</h1>
+<form [formGroup]="personForm" (ngSubmit)="onSubmit()">
+  <label>
+    First Name
+    <input type="text" formControlName="firstName" />
+  </label>
+  <label>
+    Last Name
+    <input type="text" formControlName="lastName" />
+  </label>
+  <label>
+    Age
+    <input type="number" formControlName="age" />
+  </label>
+</form>
+{{ personForm | json }}
