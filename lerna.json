@@ -1,16 +1,6 @@
 {
   "version": "0.0.2",
   "npmClient": "npm",
-  "command": {
-    "version": {
-      "allowBranch": "main",
-      "changelogPreset": {
-        "name": "conventional-changelog"
-      },
-      "conventionalCommits": true,
-      "message": "chore(release): publish"
-    }
-  },
   "packages": [
     "packages/*"
   ]
