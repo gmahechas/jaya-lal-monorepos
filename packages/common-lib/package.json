@@ -7,16 +7,15 @@
   "scripts": {
     "build": "tsc"
   },
-  "keywords": [],
   "author": "gmahechas",
   "license": "ISC",
+  "dependencies": {
+    "joi": "^17.3.0"
+  },
   "devDependencies": {
     "typescript": "^4.1.3"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "joi": "^17.3.0"
   }
 }
