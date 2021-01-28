@@ -1,6 +1,6 @@
 {
   "name": "backend-express",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "author": "gmahechas",
   "license": "MIT",
@@ -9,7 +9,7 @@
     "start": "ts-node-dev --poll src/index.ts"
   },
   "dependencies": {
-    "@gmahechas/common-lib": "^0.0.2",
+    "@gmahechas/common-lib": "^0.0.3",
     "express": "^4.17.1"
   },
   "devDependencies": {
