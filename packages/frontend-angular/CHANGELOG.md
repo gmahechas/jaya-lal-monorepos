@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## <small>0.0.4 (2021-01-28)</small>
+
+* feat(backend-express): mesanje corto ([120f90a](https://github.com/gmahechas/jaya-lal-monorepos/commit/120f90a))
+
+
+### BREAKING CHANGE
+
+* nnnnnnn
+
+
+
+
 ## <small>0.0.3 (2021-01-28)</small>
 
 * install dependecies ([7cfb73f](https://github.com/gmahechas/jaya-lal-monorepos/commit/7cfb73f))
