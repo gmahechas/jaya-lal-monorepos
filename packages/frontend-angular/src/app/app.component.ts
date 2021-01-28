@@ -9,11 +9,11 @@ import { validate, personValidation, IPerson } from '@gmahechas/common-lib';
 })
 export class AppComponent {
 
-/*   person: IPerson = {
+  person: IPerson = {
     firstName: 'Jaya',
     lastName: 'Company',
     email: 'jaya@jaya.com'
-  }; */
+  };
 
   personForm = this.formBuilder.group({
     firstName: this.formBuilder.control(''),
